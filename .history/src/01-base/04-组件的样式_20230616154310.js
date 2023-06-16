@@ -4,7 +4,7 @@ export default class App extends Component {
   render() {
     var myname="zenghao"
     var obj={
-      backgroundColor:"Yellow",
+      background:"Yellow",
       fontSize:"30px"
 
     }
