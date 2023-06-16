@@ -11,7 +11,7 @@ export default class App extends Component {
         {10+1}
         {10>20?'aaa':'bbb'}
         <div style={obj}>1111111</div>
-        <div style={{background:"Red"}}>222</div>
+        <div style={{background:"Red"}}>2222222222222</div>
       </div>
       
     )
