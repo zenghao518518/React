@@ -11,7 +11,6 @@ export default class App extends Component {
         {10+10}-{myname}
         {10>20?'aaa':'bbb'}
         <div style={obj}>1111111</div>
-        <div style={{background:"Red"}}>1111111</div>
       </div>
       
     )
