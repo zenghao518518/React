@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 export default class App extends Component {
+  a = 100
+
   render() {
     return (
       <div>

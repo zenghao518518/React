@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 
 export default class App extends Component {
+  a = 100
+
   render() {
     return (
       <div>
          <input></input>
          <button onClick={()=>{
-            console.log("click1")
+            console.log("click1",this.a)
          }}>add1</button>
          <button onClick={this.handleClick2}>add2</button>
          <button onClick={this.handleClick3}>add3</button>
