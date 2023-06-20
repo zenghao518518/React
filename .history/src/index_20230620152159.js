@@ -12,4 +12,4 @@ import ReactDOM from 'react-dom/client'
 import App from './01-base/07-ref'
 let root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(<div>111111</div>);
-root.render(<React.StrictMode><App></App></React.StrictMode>);
+root.render(<App></App>);
