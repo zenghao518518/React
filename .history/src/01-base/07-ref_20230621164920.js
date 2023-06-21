@@ -13,7 +13,7 @@ export default class App extends Component {
             console.log("click1",this.myref.current.value)
          }}>add1</button>
 
-         <button onClick={this.handleClick2}>add2</button>
+         <botton onClick={this.handleClick2}>add2</botton>
        
       </div>
     )
@@ -21,7 +21,7 @@ export default class App extends Component {
   }
 
   handleClick2(){
-    console.log("click2",this) //这里的this为代理对象undefined
+    console.log("click2",this)
   }
 
  

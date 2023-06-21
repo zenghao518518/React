@@ -21,7 +21,7 @@ export default class App extends Component {
   }
 
   handleClick2(){
-    console.log("click2",this) //这里的this为代理对象undefined
+    console.log("click2",this)
   }
 
  
