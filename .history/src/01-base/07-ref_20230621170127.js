@@ -25,7 +25,7 @@ export default class App extends Component {
     console.log("click2",this) //这里的this为代理对象undefined
   }
   handleClick3=()=>{
-    console.log("click2",this.myref.current.value) //这里的this为button
+    console.log("click2",this) //这里的this为代理对象undefined
   }
   //React并不会真正的绑定事件到每一个具体《》的元素上，而是采用事件代理的模式:
 }
