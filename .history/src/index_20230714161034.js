@@ -12,7 +12,7 @@ import ReactDOM from 'react-dom/client'
 //import App from './01-base/07-ref'
 //import App from './01-base/08-state'
 //import App from './01-base/09-数组渲染'
-import App from './01-base/10-todolist'
+import App from './01-base/09-数组渲染'
 let root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(<div>111111</div>);
 root.render(<React.StrictMode><App></App></React.StrictMode>);
