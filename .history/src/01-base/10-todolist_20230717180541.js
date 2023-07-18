@@ -30,12 +30,7 @@ export default class App extends Component {
                     <li key={item.id}>
                         {item.mytest}
                         {/* 富文本显示 */}
-                        <span dangerouslySetInnerHTML={
-                          {
-                            __html :item.mytest
-                          }
-                        }></span>
-
+                        
                         {/* <button onClick={this.handleDelClick.bind(this,index)}>Del</button> */}
                         <button onClick={()=>this.handleDelClick(index)}>Del</button>
                     </li>

@@ -27,15 +27,7 @@ export default class App extends Component {
          <ul>
              {
                 this.state.list.map((item,index)=>
-                    <li key={item.id}>
-                        {item.mytest}
-                        {/* 富文本显示 */}
-                        <span dangerouslySetInnerHTML={
-                          {
-                            __html :item.mytest
-                          }
-                        }></span>
-
+                    <li key={item.id}>{item.mytest}
                         {/* <button onClick={this.handleDelClick.bind(this,index)}>Del</button> */}
                         <button onClick={()=>this.handleDelClick(index)}>Del</button>
                     </li>
