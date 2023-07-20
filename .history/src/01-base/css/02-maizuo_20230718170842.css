@@ -1,0 +1,7 @@
+ul{
+    list-style: none;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    top: 0px;
+}
