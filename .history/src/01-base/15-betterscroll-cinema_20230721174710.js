@@ -4,7 +4,9 @@
 // 在react渲染组件中 ， 初始化的index.js文件里，存在一个<React.StrictMode>标签，
 // 这个是react的一个用来突出显示应用程序中潜在问题的工具（严格模式）
 import React, { Component } from "react";
+import BetterScroll from 'better-scroll'
 import axios from "axios";
+
 export default class Cinema extends Component {
   //组件渲染了两次
   constructor() {
@@ -53,12 +55,18 @@ export default class Cinema extends Component {
     return (
       <div>
         <input onInput={this.handleInput}/>
-        {this.state.cinemaList.map((item) => (
+        <div className="wrapper" style={{height:'500px',background:'yellow',overflow:'hidden'}}>
+        <div className="content">
+        {
+          this.state.cinemaList.map((item) => (
           <dl key={item.cinemaId}>
             <dt>{item.name}</dt>
             <dd>{item.address}</dd>
           </dl>
-        ))}
+        ))
+        }
+        </div>
+        </div>
       </div>
     );
   }
@@ -81,8 +89,3 @@ export default class Cinema extends Component {
 
  
 }
-//  var arr =["aaa","bbb","bcc"];
-
-//   var newarr = arr.filter(item=>item.includes("a"))
-
-//   console.log(newarr)

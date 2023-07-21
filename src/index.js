@@ -13,9 +13,13 @@ import ReactDOM from 'react-dom/client'
 //import App from './01-base/08-state'
 //import App from './01-base/09-数组渲染'
 //import App from './01-base/10-todolist'
-import App from './01-base/12-卖座选项卡'
+//import App from './01-base/12-卖座选项卡'
+//import App from './01-base/13-setState同步异步'
+//import App from './01-base/14-betterScroll'
+import App from './01-base/15-betterscroll-cinema'
 //import App from './01-base/19-非受控'
 //import App from './01-base/20-受控'
 let root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(<div>111111</div>);
 root.render(<React.StrictMode><App></App></React.StrictMode>);
+//root.render(<App></App>);

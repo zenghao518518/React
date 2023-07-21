@@ -4,7 +4,9 @@
 // 在react渲染组件中 ， 初始化的index.js文件里，存在一个<React.StrictMode>标签，
 // 这个是react的一个用来突出显示应用程序中潜在问题的工具（严格模式）
 import React, { Component } from "react";
+import BetterScroll from 'better-scroll'
 import axios from "axios";
+
 export default class Cinema extends Component {
   //组件渲染了两次
   constructor() {
@@ -35,10 +37,17 @@ export default class Cinema extends Component {
           this.setState({
             bakcinemaList: res.data.data.cinemas,
             cinemaList: res.data.data.cinemas,
+          },()=>{
+            //与课程不同，必须写在这里
+            console.log("返回函数",this.state.cinemaList)
+            new BetterScroll(".wrapper") 
           });
+
+          
         } else {
           return;
         }
+        
         // Can't call setState on a component that is not yet mounted. This is a no-op, but it might indicate 
         // this.setState({
         //   cinemaList: res.data.data.cinemas,
@@ -53,12 +62,18 @@ export default class Cinema extends Component {
     return (
       <div>
         <input onInput={this.handleInput}/>
-        {this.state.cinemaList.map((item) => (
+        <div className="wrapper" style={{height:'500px',background:'yellow',overflow:'hidden'}}>
+        <div className="content">
+        {
+          this.state.cinemaList.map((item) => (
           <dl key={item.cinemaId}>
             <dt>{item.name}</dt>
             <dd>{item.address}</dd>
           </dl>
-        ))}
+        ))
+        }
+        </div>
+        </div>
       </div>
     );
   }
@@ -73,7 +88,7 @@ export default class Cinema extends Component {
     //console.log(newlist)
     this.setState({
       cinemaList: newlist,
-    });
+    } );
    //!!!同步非异步!!!!!这里的打印一般上面还没来得及跟新，状态不对
    console.log(this.state.cinemaList)
 
@@ -81,8 +96,3 @@ export default class Cinema extends Component {
 
  
 }
-//  var arr =["aaa","bbb","bcc"];
-
-//   var newarr = arr.filter(item=>item.includes("a"))
-
-//   console.log(newarr)

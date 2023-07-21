@@ -81,8 +81,3 @@ export default class Cinema extends Component {
 
  
 }
-//  var arr =["aaa","bbb","bcc"];
-
-//   var newarr = arr.filter(item=>item.includes("a"))
-
-//   console.log(newarr)

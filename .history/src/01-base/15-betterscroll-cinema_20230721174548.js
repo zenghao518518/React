@@ -53,12 +53,18 @@ export default class Cinema extends Component {
     return (
       <div>
         <input onInput={this.handleInput}/>
-        {this.state.cinemaList.map((item) => (
+        <div>
+        <div className="content">
+        {
+          this.state.cinemaList.map((item) => (
           <dl key={item.cinemaId}>
             <dt>{item.name}</dt>
             <dd>{item.address}</dd>
           </dl>
-        ))}
+        ))
+        }
+        </div>
+        </div>
       </div>
     );
   }
@@ -81,8 +87,3 @@ export default class Cinema extends Component {
 
  
 }
-//  var arr =["aaa","bbb","bcc"];
-
-//   var newarr = arr.filter(item=>item.includes("a"))
-
-//   console.log(newarr)

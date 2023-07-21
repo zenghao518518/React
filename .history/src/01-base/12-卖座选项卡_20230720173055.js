@@ -30,8 +30,8 @@ export default class App extends Component {
         return <Film></Film>;
        
       case 1:
-        return <Cinema></Cinema>;
-        
+        //return <Cinema></Cinema>;
+        return null;
        
       case 2:
         return <Center></Center>;

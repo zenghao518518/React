@@ -34,7 +34,6 @@ export default class Cinema extends Component {
         if (this.updater.isMounted(this)) {
           this.setState({
             bakcinemaList: res.data.data.cinemas,
-            cinemaList: res.data.data.cinemas,
           });
         } else {
           return;
@@ -66,7 +65,7 @@ export default class Cinema extends Component {
   handleInput=(event)=>
   {
     console.log("Input",event.target.value)
-    var newlist=this.state.bakcinemaList.filter(item=>item.name.toUpperCase().includes(event.target.value.toUpperCase())
+    var newlist=this.state.cinemaList.filter(item=>item.name.toUpperCase().includes(event.target.value.toUpperCase())
                                          || item.address.toUpperCase().includes(event.target.value.toUpperCase())
                                        )
                 
@@ -74,9 +73,6 @@ export default class Cinema extends Component {
     this.setState({
       cinemaList: newlist,
     });
-   //!!!同步非异步!!!!!这里的打印一般上面还没来得及跟新，状态不对
-   console.log(this.state.cinemaList)
-
   }
 
  

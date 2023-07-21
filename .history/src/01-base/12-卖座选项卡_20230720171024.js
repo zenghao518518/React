@@ -31,7 +31,6 @@ export default class App extends Component {
        
       case 1:
         return <Cinema></Cinema>;
-        
        
       case 2:
         return <Center></Center>;
