@@ -18,11 +18,9 @@ import ReactDOM from 'react-dom/client'
 //import App from './01-base/14-betterScroll'
 //import App from './01-base/15-betterscroll-cinema'
 //import App from './01-base/16-prop'
-//import App from './01-base/17-props函数式组件'
-//import App from './01-base/18-状态vs属性'
+import App from './01-base/17-props函数式组件'
 //import App from './01-base/19-非受控'
 //import App from './01-base/20-受控'
-import App from './01-base/21-受控Cinema'
 let root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(<div>111111</div>);
 root.render(<React.StrictMode><App></App></React.StrictMode>);

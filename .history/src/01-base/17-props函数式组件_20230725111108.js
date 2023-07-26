@@ -5,10 +5,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-          {/* 类组件 */}
           <Navbar></Navbar>
-          {/* 函数式组件 */}
-          <Sidebar bg="yellow" position="left"></Sidebar>
+          <Sidebar></Sidebar>
       </div>
     )
   }
