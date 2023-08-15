@@ -24,8 +24,8 @@ import ReactDOM from 'react-dom/client'
 //import App from './01-base/20-受控'
 //import App from './01-base/21-受控Cinema'
 //import App from './01-base/22-受控todolist'
-//import App from './02-advanced/01-子传父'
-import App from './02-advanced/02-非受控卖座选项卡功能'
+import App from './02-advanced/01-子传父'
+
 let root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(<div>111111</div>);
 root.render(<React.StrictMode><App></App></React.StrictMode>);
